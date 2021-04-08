@@ -5,15 +5,17 @@
           для числа 23 вывод будет 2 + 3 = 5. */
 
 let n = 56;
-n = 5 + 6;
-console.log(n);
+let sum = n % 10 + (n - n % 10) / 10;
+console.log(sum);
 
 /* 2. Поменять значение двух переменных местами
 без использования третьей переменной. */
 
 let a = 5;
 let b = 4;
-a = [b, b = a][0];
+a = a + b;
+b = a - b;
+a = a - b;
 console.log(a);
 console.log(b);
 
@@ -33,6 +35,6 @@ console.log(s);
 
 let start = 2;
 let end = 5;
-let between = (start < end) ? end - start : -1;
+let between = start < end ? end - start : -1;
 console.log(between);
 
