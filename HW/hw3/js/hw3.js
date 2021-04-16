@@ -40,19 +40,12 @@ for (let i = 0; i < rand.length; i++) {
 }
 console.log(max, min);
 
-
-
 // 3. Создать массив из целых чисел.
 // Отрицательные элементы массива скопировать в новый массив.
 
-min = [2, -4, 6, -8, 10, -12];
-function getNegativeNumbers(min) {
-    let negatives = [];
-for (let i = 0; i < min.length; i++) {
-if (min[i] < 0) {
-    negatives.push(min[i]);
-    }
+nums = [2, -4, 6, -8, 10, -12];
+let newNums = [];
+for (let i = nums.length - 1; i >= 0; i -= 1) {
+    if (nums[i] < 0) newNums.push (nums[i]);
 }
-return negatives;
-}
-console.log(getNegativeNumbers(min));
+console.log(newNums);
