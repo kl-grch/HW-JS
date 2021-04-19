@@ -52,15 +52,15 @@ function chekSpam(text, ...words) {
             if (arrText[i] == words[j]) sum += 1;
         }
     }
-    if (sum = 0) return 'Спам в тексте составил 0 баллов из 5';
-    if (sum => 1 && sum <= 2) return 'Спам в тексте составил 1 балл из 5';
-    if (sum => 3 && sum <= 4) return 'Спам в тексте составил 2 балла из 5';
-    if (sum => 5 && sum <= 6) return 'Спам в тексте составил 3 балла из 5';
-    if (sum => 7 && sum <= 9) return 'Спам в тексте составил 4 балла из 5';
+    if (sum == 0) return 'Спам в тексте составил 0 баллов из 5';
+    if (sum >= 1 && sum <= 2) return 'Спам в тексте составил 1 балл из 5';
+    if (sum >= 3 && sum <= 4) return 'Спам в тексте составил 2 балла из 5';
+    if (sum >= 5 && sum <= 6) return 'Спам в тексте составил 3 балла из 5';
+    if (sum >= 7 && sum <= 9) return 'Спам в тексте составил 4 балла из 5';
     if (sum > 9) return 'Спам в тексте составил 5 баллов из 5';
 }
-    let text = "error error error dolor dolor dolor no war";
-    console.log(chekSpam(text, 'error', 'dolor'));
+let text = "Lorem error ipsum dolor sit amet consectetur adipisicing elit Aut corporis dolor delectus ducimus dolor error iusto laudantium officia officiis vero error voluptatibus Aliquam ea ipsa quasi dolor sapiente error ullam A dolore dolorum minima provident error  voluptas Aliquam aut fugiat hic inventore error nam provident ratione sed";
+console.log(chekSpam(text, 'error', 'dolor'));
 
 // 4. На методы массивов (functions-2)
 
