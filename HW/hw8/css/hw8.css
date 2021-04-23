@@ -1,0 +1,16 @@
+.items {
+    display: flex;
+    flex-wrap: wrap; /* разрешаем перенос */
+}
+
+.card {
+    border: 1px solid orangered;
+    border-radius: 10px;
+    flex: 1; /* картинка одинакового размера */
+    text-align: center;
+}
+
+img { /* ширина картинки */
+    width: 100%;
+    height: auto;
+}
